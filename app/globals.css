@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  /* Goldenes Rössli: jede Farbe kommt vom Haus selbst — siehe design-direction.md */
+  --kalk: #f4eee3; /* Kalkputz der Fassade, Limewash der Stube */
+  --kalk-tief: #ece3d2; /* dieselbe Wand im Schatten */
+  --stube: #26201a; /* Nussbaum-Wainscot, Nachtteppich — Ink */
+  --stube-muted: rgba(38, 32, 26, 0.68);
+  --stube-faint: rgba(38, 32, 26, 0.45);
+  --laden: #a63c28; /* Oxidrot der Fensterläden */
+  --gold: #b8914e; /* Fassadenschrift, Vordach, Messinglampen */
+  --holz: #8a6b49; /* Täfer und Eingangstür */
+  --nacht: #33405c; /* Boxspringbetten — nur Hotel-Seite */
+  --line: rgba(38, 32, 26, 0.16);
+
+  --background: var(--kalk);
+  --foreground: var(--stube);
+}
+
+@theme inline {
+  --font-sans: var(--font-body), system-ui, sans-serif;
+  --font-serif: var(--font-display), Georgia, serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@layer base {
+  body {
+    background: var(--kalk);
+    color: var(--stube);
+  }
+  ::selection {
+    background: var(--gold);
+    color: var(--kalk);
+  }
+}
+
+/* Unterstrich, der sich beim Hover zeichnet */
+.link-draw {
+  position: relative;
+}
+
+.link-draw::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 1px;
+  width: 100%;
+  background: var(--laden);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.link-draw:hover::after,
+.link-draw:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* Die gesetzte Karte: Preis steht in Gold hinter dem Gericht, keine Punktlinien */
+.karte-preis {
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-draw::after {
+    transition: none;
+  }
+}
