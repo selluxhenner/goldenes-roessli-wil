@@ -1,0 +1,27 @@
+# Restaurant zum goldenen Rössli, Wil SG
+
+Gourmet-Restaurant und Boutique-Hotel im historischen Gasthaus Rössli,
+Toggenburgerstrasse 59, 9500 Wil SG, Schweiz.
+
+Küchenchef und Geschäftsführer: Franco Lindura (seit 1. März 2024).
+Stationen zuvor: Hangar-7/Ikarus Salzburg, Vila Joya Algarve (2 Michelin-Sterne),
+Rosa Alpina Südtirol, La Barakka Luzern.
+
+Konzept: Gehobene Küche am Abend, drei Mittagsmenüs ab CHF 25.50
+(inkl. Salat oder Suppe und Dessert), täglich frisch zusammengestellt.
+Spezialität: ganze Fische auf Vorbestellung, z. B. Branzino im Salzteig,
+am Tisch tranchiert.
+
+Öffnungszeiten: Montag bis Samstag 11.30–15.00 und 17.30–23.00 Uhr.
+Sonntag geschlossen; für Anlässe (Saal bis 50 Personen) auf Anfrage geöffnet.
+
+Hotel: Doppelzimmer CHF 180, Einzelzimmer CHF 150.
+Reservation: +41 71 913 97 50, reservation@goldenes-roessli-wil.ch
+
+## Seiten
+- /speisekarte : vollständige Speisekarte mit Preisen (CHF)
+- /weinkarte : Weinkarte / Vinothek
+- /hotel : Zimmer und Preise
+- /ueber-uns : Franco Lindura und das Haus
+- /reservation : Tisch reservieren
+- /kontakt : Adresse, Öffnungszeiten, häufige Fragen

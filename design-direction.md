@@ -15,7 +15,7 @@ die Fassade kalkweiss. Die Site steht auf Kalk-Creme, nicht auf Nachtschwarz
 --laden:       #A63C28  /* das Oxidrot der Fensterläden — der Akzent, sparsam */
 --gold:        #B8914E  /* Goldschrift "Gasthaus Rössli", Vordach, Messing-Pferdelampen */
 --holz:        #8A6B49  /* das Honig-Holz von Täfer und Eingangstür — Muted/Sekundär */
---nacht:       #33405C  /* das Nachtblau der Boxspringbetten — NUR auf der Hotel-Seite */
+--nacht:       #33405C  /* Nachtblau: Boxspringbetten + Kontrastfarbe der alten Site — Titel (h1/h2) und Footer, als Gegengewicht zum Rot */
 ```
 
 Kontrast: --stube auf --kalk = ~13:1. Gold nie für Fliesstext (zu hell auf
@@ -49,8 +49,10 @@ Fotos rahmen die Karten (Fassade, Stube, Osso Bucco), sie ersetzen sie nie.
 
 ## Weitere Festlegungen
 
-- Wortmarke statt Logo: "zum goldenen Rössli" in Fraunces, "goldenen" italic
-  gold — bis der Client ein Vektor-Logo liefert (TODO:CLIENT).
+- Logo: das goldene Pferd aus dem JPG-Logo, freigestellt als PNG
+  (`scripts/logo.mjs` — Weiss→transparent, Textzeile weggeschnitten für die
+  Pferd-Solo-Variante). Pferd in Nav + Footer, volles Logo mit Schriftzug im
+  Hero. Ein echtes Vektor-Logo bleibt wünschenswert (TODO:CLIENT).
 - Hero: die Fassade (Hochformat) bzw. die Stube — Text NEBEN dem Bild auf
   Kalkfläche, kein dunkler Gradient über dem Foto.
 - Motion: eine Handvoll gezielter Reveals (Karten "legen sich auf den Tisch"),

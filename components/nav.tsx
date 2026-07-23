@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -20,10 +21,24 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-50 bg-[var(--kalk)]/95 backdrop-blur-sm border-b border-[var(--line)]">
       <nav className="max-w-6xl mx-auto px-5 md:px-10 h-16 md:h-20 flex items-center justify-between">
-        <Link href="/" className="font-serif text-lg md:text-xl leading-none" onClick={() => setOpen(false)}>
-          zum{" "}
-          <em className="not-italic font-serif italic text-[var(--gold)]">goldenen</em>{" "}
-          Rössli
+        <Link
+          href="/"
+          className="flex items-center gap-3 font-serif text-lg md:text-xl leading-none"
+          onClick={() => setOpen(false)}
+        >
+          <Image
+            src="/images/logo-roessli-horse.png"
+            alt=""
+            width={601}
+            height={548}
+            className="h-9 md:h-10 w-auto"
+            priority
+          />
+          <span>
+            zum{" "}
+            <em className="not-italic font-serif italic text-[var(--gold)]">goldenen</em>{" "}
+            Rössli
+          </span>
         </Link>
 
         <div className="hidden lg:flex items-center gap-7">
@@ -42,8 +57,8 @@ export function Nav() {
           ))}
           <Link
             href="/reservation"
-            className="rounded-full border border-[var(--stube)] px-5 py-2 text-sm
-                       hover:bg-[var(--stube)] hover:text-[var(--kalk)] transition-colors duration-300"
+            className="rounded-full border border-[var(--nacht)] text-[var(--nacht)] px-5 py-2 text-sm
+                       hover:bg-[var(--nacht)] hover:text-[var(--kalk)] transition-colors duration-300"
           >
             Tisch reservieren
           </Link>

@@ -6,11 +6,11 @@
   --kalk-tief: #ece3d2; /* dieselbe Wand im Schatten */
   --stube: #26201a; /* Nussbaum-Wainscot, Nachtteppich — Ink */
   --stube-muted: rgba(38, 32, 26, 0.68);
-  --stube-faint: rgba(38, 32, 26, 0.45);
+  --stube-faint: rgba(38, 32, 26, 0.65); /* klein gesetzte Labels — 0.45 fiel unter 4.5:1 */
   --laden: #a63c28; /* Oxidrot der Fensterläden */
   --gold: #b8914e; /* Fassadenschrift, Vordach, Messinglampen */
   --holz: #8a6b49; /* Täfer und Eingangstür */
-  --nacht: #33405c; /* Boxspringbetten — nur Hotel-Seite */
+  --nacht: #33405c; /* Boxspringbetten + Kontrastfarbe der alten Site — Titel & Footer, als Gegengewicht zum Rot */
   --line: rgba(38, 32, 26, 0.16);
 
   --background: var(--kalk);
@@ -28,6 +28,10 @@
   body {
     background: var(--kalk);
     color: var(--stube);
+  }
+  /* Grosse Titel in Nachtblau — das Blau-Rot-Spiel der alten Site */
+  h1 {
+    color: var(--nacht);
   }
   ::selection {
     background: var(--gold);
