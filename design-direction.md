@@ -59,4 +59,8 @@ Fotos rahmen die Karten (Fassade, Stube, Osso Bucco), sie ersetzen sie nie.
   Rest statisch. prefers-reduced-motion respektiert. Nichts above the fold
   animiert beim Load.
 - Hotel-Seite darf als einzige das Nachtblau tragen — die Zimmer sind
-  tatsächlich blau.
+  tatsächlich blau. (Update: Nachtblau ist inzwischen sitewide Kontrastfarbe,
+  siehe Palette.)
+- Mobile-Nav: Vollbild-Overlay in Nachtblau — Links gross in Fraunces mit
+  Gold-Hairlines wie die Karte, Rössli als Wasserzeichen, Telefon + Zeiten
+  unten. Gestaffelter Einstieg (framer-motion), Scroll-Lock, Escape schliesst.
